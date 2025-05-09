@@ -8,7 +8,7 @@ class Prodi extends Model
 {
     protected $table = 'prodi';
 
-    public function fakultas() {
-        return $this->belongsTo(Fakultas::class, 'fakultas_id', 'id');
+    public function fakultas(){
+        return $this->belongsTo(Fakultas::class,'fakultas_id','id');
     }
 }
